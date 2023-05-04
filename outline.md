@@ -22,9 +22,9 @@
 
 - Display Flex
 - Flex-direction
-- flex-wrap
 - justify content
 - align-items
+- flex-wrap
 - align-content
 - gap
 

@@ -1,0 +1,15 @@
+/* Don't mind the stuff behind the curtain here! Nothing needs to be changed below */
+
+.fws-1-item {
+  background-color: red;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+.fws-2-item {
+  background-color: beige;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
