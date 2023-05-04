@@ -9,34 +9,131 @@
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="./flexbox.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+          rel="stylesheet">
     <title>Flexbox Practice 💪🏻</title>
   </head>
 
   <body>
-    <h1>Flex Containers</h1>
-    <section>
-      <h2>Flexin' 💪🏻 with Flexbox!</h2>
-      <!-- Add style="display:flex" -->
-      <div style="display:flex;">
-        <div class="fws-1-item"></div>
-        <div class="fws-1-item"></div>
-        <div class="fws-1-item"></div>
-        <div class="fws-1-item"></div>
-      </div>
-    </section>
+    <main>
+      <h1>Flex Containers</h1>
+      <section>
+        <h2>Flexin' 💪🏻 with Flexbox!</h2>
+        <!-- Start by adding flex to demonstrate how the items will flexibly scale based on available space -->
+        <!-- Show flex-wrap and how it maintains the set size of the boxes, causing them to cascade to the next row -->
+        <!-- Do not demonstrate flex-direction until all the way through flex-direction:row -->
+        <div style="display:flex; flex-wrap: wrap;">
+          <div class="fws-1-item"></div>
+          <div class="fws-1-item"></div>
+          <div class="fws-1-item"></div>
+          <div class="fws-1-item"></div>
+        </div>
+      </section>
 
-    <section>
-      <h2>Justify Content</h2>
-      <!-- Add display: flex; and demonstrate the different values for justify content -->
-      <div style="display: flex; justify-content:space-around">
-        <div class="fws-2-item"></div>
-        <div class="fws-2-item"></div>
-        <div class="fws-2-item"></div>
-        <div class="fws-2-item"></div>
-      </div>
+      <section>
+        <h2>Justify Content</h2>
 
-    </section>
-    <h1>Flex Items</h1>
+        <!-- flex start -->
+        <h3>justify-content: flex-start</h3>
+        <div style="display: flex; justify-content:flex-start"
+             class="fws-2-container">
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+        </div>
+
+        <!-- flex-end -->
+        <h3>justify-content: flex-end</h3>
+        <div style="display: flex; justify-content:flex-end"
+             class="fws-2-container">
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+        </div>
+
+        <!-- center -->
+        <h3>justify-content: center</h3>
+        <div style="display: flex; justify-content:center"
+             class="fws-2-container">
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+        </div>
+
+        <!-- space-around -->
+        <h3>justify-content: space-around</h3>
+        <div style="display: flex; justify-content:space-around"
+             class="fws-2-container">
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+        </div>
+
+        <!-- space-between -->
+        <h3>justify-content: space-between</h3>
+        <div style="display: flex; justify-content:space-between"
+             class="fws-2-container">
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+          <div class="fws-2-item"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Align Items</h2>
+
+        <!-- flex start -->
+        <h3>align-items: flex-start</h3>
+        <div style="display: flex; align-items:flex-start"
+             class="fws-3-container">
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+        </div>
+
+        <!-- flex end -->
+        <h3>align-items: flex-end</h3>
+        <div style="display: flex; align-items:flex-end"
+             class="fws-3-container">
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+        </div>
+
+        <!-- center -->
+        <h3>align-items: center</h3>
+        <div style="display: flex; align-items:center"
+             class="fws-3-container">
+          <div class="fws-3-item">item</div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+        </div>
+
+        <!-- stretch -->
+        <h3>align-items: stretch</h3>
+        <div style="display: flex; align-items:stretch"
+             class="fws-3-container">
+          <div class="fws-3-item">item</div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+          <div class="fws-3-item"></div>
+        </div>
+      </section>
+      <h1>Flex Items</h1>
+    </main>
   </body>
 
 </html>
