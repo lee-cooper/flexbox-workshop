@@ -4,30 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./flexbox.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/site-styles/flexbox.css" />
+    <link rel="stylesheet" href="./sandbox.css" />
     <script src="./flexbox.js" defer></script>
     <title>Flexbox Practice 💪🏻</title>
   </head>
 
   <body>
+    <header>
+      <h1>Flexbox</h1>
+      <span>Presented by: Lee Cooper</span>
+    </header>
     <main>
-      <h1>Flex Containers</h1>
       <section>
-        <h2>Flexin' 💪🏻 with Flexbox!</h2>
-        <!-- Start by adding flex to demonstrate how the items will flexibly scale based on available space -->
-        <!-- Show flex-wrap and how it maintains the set size of the boxes, causing them to cascade to the next row -->
-        <!-- Do not demonstrate flex-direction until all the way through flex-direction:row -->
-        <div style="display: flex; flex-wrap: wrap">
-          <div class="tile">Flexbox Item</div>
-          <div class="tile">Flexbox Item</div>
-          <div class="tile">Flexbox Item</div>
-          <div class="tile">Flexbox Item</div>
+        <h2>What is Flexbox?</h2>
+        <p>
+          Flexbox is a layout system in CSS that makes it easy to align and
+          distribute content within a container.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why Use It?</h2>
+      </section>
+
+      <section>
+        <h2>Flexbox Sandbox 🛠️</h2>
+        <div class="container sandbox">
+          <div class="tile tile-sandbox">Flexbox Item</div>
+          <div class="tile tile-sandbox">Flexbox Item</div>
+          <div class="tile tile-sandbox">Flexbox Item</div>
         </div>
       </section>
 
@@ -41,6 +53,9 @@
         <ul>
           <li>
             Aligning paragraphs in Microsoft Word (left, center, right aligned)
+          </li>
+          <li>
+            Arranging pictures on the wall (aligned with even space between)
           </li>
           <li>
             Movie Theater seating (seats all centered together, or separated by
@@ -61,11 +76,13 @@
             <option value="space-between">space-between</option>
           </select>
 
-          <br />
-          <br />
+          <pre>
+.container {
+  display: flex;
+  justify-content: <span id="justify-display">flex-start</span>;
+}</pre>
 
           <div class="container fws-2-container">
-            <div class="tile tile-justify">Flexbox Item</div>
             <div class="tile tile-justify">Flexbox Item</div>
             <div class="tile tile-justify">Flexbox Item</div>
             <div class="tile tile-justify">Flexbox Item</div>
@@ -94,14 +111,51 @@
             <option value="center">center</option>
           </select>
 
-          <br />
-          <br />
+          <pre>
+.container {
+  display: flex;
+  align-items: <span id="align-display">stretch</span>;
+}</pre>
 
           <div class="container fws-3-container">
             <div class="tile">Flexbox Item</div>
             <div class="tile">Flexbox Item</div>
             <div class="tile">Flexbox Item</div>
-            <div class="tile">Flexbox Item</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Flex Direction</h2>
+        <p>summary</p>
+        <span>Mental Models:</span>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <div class="demo-container">
+          <h3>Demo 🎥</h3>
+          <label for="flex-direction-select"
+            ><b>Choose a flex-direction value:</b></label
+          >
+          <select name="flex-direction-values" id="flex-direction-select">
+            <option value="row">row (default)</option>
+            <option value="column">column</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column-reverse">column-reverse</option>
+          </select>
+
+          <pre>
+.container {
+  display: flex;
+  flex-direction: <span id="flex-direction-display">row</span>;
+}</pre>
+
+          <div class="container fws-4-container">
+            <div class="tile tile-direction">Flexbox Item 1</div>
+            <div class="tile tile-direction">Flexbox Item 2</div>
+            <div class="tile tile-direction">Flexbox Item 3</div>
           </div>
         </div>
       </section>

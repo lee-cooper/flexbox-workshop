@@ -1,5 +1,10 @@
 /* Don't mind the stuff behind the curtain here! Nothing needs to be changed below */
 
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
 html,
 body {
   font-family: 'Lato', sans-serif;
@@ -9,49 +14,98 @@ body {
 body {
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #fdfdfd;
 }
 
+@keyframes headerAnimation {
+  50% {
+    letter-spacing: 1.5rem;
+  }
+}
+
+header {
+  /* background-color: #44344f;  */
+  background-color: #655a7c;
+  color: white;
+  width: 100%;
+  max-width: 766px;
+  padding: 1.5rem 3rem;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header h1 {
+  letter-spacing: 1rem;
+  animation: headerAnimation 5s infinite;
+  animation-timing-function: ease-in-out;
+  font-size: 3rem;
+}
+
 main {
-  padding: 3rem;
-  margin: 2rem 0;
+  padding: 0 3rem 3rem;
   height: 100%;
   border-radius: 3px;
+  max-width: 766px;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+section {
+  margin-top: 5rem;
+}
+
+section:first-of-type {
+  margin-top: 1rem;
 }
 
 select {
   padding: 2.5px 5px;
 }
 
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
 .tile {
   background-color: #fcfcfc;
   min-height: 100px;
-  width: 100px;
+  max-width: 100px;
   margin: 0.5rem;
+  padding: 1rem;
   border-radius: 3px;
   display: grid;
   place-items: center;
+  text-align: center;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
-.tile-justify {
+.tile-justify,
+.tile-sandbox,
+.tile-direction {
   height: 100px;
 }
 
 .container {
   border: 1px dashed gray;
-  height: 300px;
+  height: 350px;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='150px' width='150px'><text transform='translate(20, 100) rotate(-45)' fill='rgb(158,158,158, 0.3)' font-size='18'>flexbox container</text></svg>");
 }
 
 .fws-2-container,
-.fws-3-container {
+.fws-3-container,
+.fws-4-container {
   display: flex;
   background-color: white;
 }
