@@ -122,6 +122,10 @@ figcaption {
   height: auto;
 }
 
+.tile-sandbox {
+  height: auto;
+}
+
 .tile-align:first-of-type {
   padding-top: 2rem;
 }

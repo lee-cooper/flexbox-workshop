@@ -53,7 +53,16 @@
 
       <section>
         <h2>Flex Container and Flex Items</h2>
-        <p>Flexbox requires two things: a flexbox container, and items.</p>
+        <p>
+          Flexbox requires two things: a <b>flexbox container</b>, and
+          <b>items</b> to put in it. For example:
+        </p>
+        <ul>
+          <li>A cupboard (container) containing drink glasses (items)</li>
+          <li>A drawer (container) holding socks (items)</li>
+          <li>A wall (container) with mounted pictures (items)</li>
+        </ul>
+        <p></p>
         <!-- Trust me, I know this is ugly :) -->
         <pre><code>&lt;div class="container">
   &lt;div>Flexbox Item&lt;/div>
@@ -66,6 +75,14 @@
   display: flex;
 }</pre
         >
+        <p>
+          Flexbox, if available in the real world, would allow your cupboards,
+          sock drawers, and pictures to neatly adjust to the size of their
+          containers when they change (if they could) and react gracefully when
+          new items are added.
+        </p>
+        <p>Think of the organization and aesthetic benefits!</p>
+        <p>But we'll settle for the magic in webpages for now.</p>
       </section>
 
       <section>
@@ -74,7 +91,10 @@
           Flexbox has two axes that defines the direction of container content:
         </p>
         <ul>
-          <li><b>Main Axis:</b> defined by the flex-direction property</li>
+          <li>
+            <b>Main Axis:</b> defined by the flex-direction property (row or
+            column)
+          </li>
           <li><b>Cross Axis:</b> runs perpendicular to the main axis</li>
         </ul>
         <p>The default flex-direction is "row."</p>
@@ -88,11 +108,32 @@
             items.
           </figcaption>
         </figure>
+        <p>
+          This means that items, when put into a flex container, will
+          automatically line up based on the main axis direction.
+        </p>
+        <p>
+          <b>Again this is one-dimensional - it's either a row, or a column.</b>
+        </p>
+        <p>
+          Once set, there's a number of properties we can apply to the container
+          to tell it how to arrange our items, and to the items themselves to
+          configure how much space is taken.
+        </p>
+        <p>
+          There's a curveball later with flex-direction and how some of these
+          properties apply. Make sure you understand the main axis / cross axis
+          - it'll come in handy later.
+        </p>
       </section>
 
       <section>
         <h2>Flexbox Sandbox 🛠️</h2>
-
+        <p>Here's the flexbox sandbox. Very exciting!</p>
+        <p>
+          We'll use this throughout our journey to apply concepts on this page.
+          Open the sandbox.css file in the workshop folder to begin editing.
+        </p>
         <div class="container sandbox">
           <div class="tile tile-sandbox">Flexbox Item</div>
           <div class="tile tile-sandbox">Flexbox Item</div>
