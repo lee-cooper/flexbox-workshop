@@ -1,0 +1,13 @@
+.problem-one-container,
+.problem-two-container,
+.problem-three-container {
+  height: auto;
+  border: 1px solid black;
+}
+.problem-one-container {
+  height: 300px;
+}
+
+img {
+  max-height: 200px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Exercises</title>
+    <link rel="stylesheet" href="./exercise-styles.css" />
+    <style>
+      /* Problem One - Centering */
+      .problem-one-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Problem 2 - Justify Pictures */
+      .problem-two-container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      /* Problem 3 - Wrapping Content */
+      .problem-three-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Flexbox Exercises</h1>
+      <section>
+        <h2>Problem 01: Centering an Item</h2>
+        <p>
+          Using flexbox, center the picture of the doge
+          <i>(ehem... Shiba Inu)</i> vertically and horizontally in the
+          container below.
+        </p>
+        <div class="problem-one-container">
+          <img src="/assets/doge.png" alt="doge" />
+        </div>
+      </section>
+      <section>
+        <h2>Problem 02: Justify the Pictures</h2>
+        <p>
+          Align the doge pictures in a horizontal line with
+          <em>space around</em> each photo.
+        </p>
+        <div class="problem-two-container">
+          <img src="/assets/doge.png" alt="doge" />
+          <img src="/assets/doge.png" alt="doge" />
+          <img src="/assets/doge.png" alt="doge" />
+        </div>
+      </section>
+      <section>
+        <h2>Problem 03: Wrapping Content</h2>
+        <p>
+          Align the doge pictures in a horizontal line. When the screen is
+          resized, make it so the pictures wrap to the next line when there
+          isn't enough space.
+        </p>
+        <p>
+          Note: We didn't cover this in the workshop - see if MDN has any ideas!
+        </p>
+        <div class="problem-three-container">
+          <img src="/assets/doge.png" alt="doge" />
+          <img src="/assets/doge.png" alt="doge" />
+          <img src="/assets/doge.png" alt="doge" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
